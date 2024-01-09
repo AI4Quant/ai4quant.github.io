@@ -445,6 +445,8 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+  transition: opacity 300ms ease-in;
+  visibility: hidden;
 }
 
 /* Footer */
@@ -559,5 +561,7 @@ button:focus {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
+    transition: opacity 300ms ease-in;
+    visibility: hidden;
   }
 }
