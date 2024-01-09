@@ -141,6 +141,10 @@ button:focus {
   text-align: center;
 }
 
+.home__container {
+
+}
+
 .home__avatar {
   width: 250px;
   height: 250px;
