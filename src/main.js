@@ -33,3 +33,17 @@ document.addEventListener('scroll', () => {
     arrowUp.style.opacity = 0;
   }
 });
+
+
+// Nav bar 토글 처리
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+// Nav bar 메뉴 클릭시 다시 메뉴를 자동으로 닫기
+navbarMenu.addEventListener('click', () => {
+  navbarMenu.classList.remove('open');
+});
