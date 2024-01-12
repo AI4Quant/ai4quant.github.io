@@ -218,41 +218,41 @@ button:focus {
   border-radius: 4px;
 }
 
-.home__divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.home__divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 49px;
-}
-
-.home__divider .shape-fill {
-  fill: #FFFFFF;
-}
-
-/*#home::after {*/
-/*  content: '';*/
+/*.home__divider {*/
 /*  position: absolute;*/
 /*  bottom: 0;*/
 /*  left: 0;*/
-/*  width: calc(100% + 1.3px);*/
-/*  height: 49px;*/
+/*  width: 100%;*/
 /*  overflow: hidden;*/
 /*  line-height: 0;*/
 /*  transform: rotate(180deg);*/
-/*  background-color: var(--color-white);*/
-/*  mask: var(--divider-single-wave);*/
-/*  -webkit-mask: var(--divider-single-wave);*/
 /*}*/
+
+/*.home__divider svg {*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  width: calc(100% + 1.3px);*/
+/*  height: 49px;*/
+/*}*/
+
+/*.home__divider .shape-fill {*/
+/*  fill: #FFFFFF;*/
+/*}*/
+
+#home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 49px;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--color-white);
+  mask: var(--divider-single-wave);
+  -webkit-mask: var(--divider-single-wave);
+}
 
 /* About */
 .majors {
@@ -372,40 +372,40 @@ button:focus {
   background-color: var(--color-accent);
 }
 
-.skills__divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.skills__divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 49px;
-}
-
-.skills__divider .shape-fill {
-  fill: var(--color-primary);
-}
-
-/*#skills::after {*/
-/*  content: '';*/
+/*.skills__divider {*/
 /*  position: absolute;*/
 /*  bottom: 0;*/
 /*  left: 0;*/
-/*  width: calc(100% + 1.3px);*/
-/*  height: 49px;*/
+/*  width: 100%;*/
 /*  overflow: hidden;*/
 /*  line-height: 0;*/
-/*  fill: var(--color-primary);*/
-/*  background-color: var(--color-primary);*/
-/*  mask: var(--divider-curve);*/
-/*  -webkit-mask: var(--divider-curve);*/
 /*}*/
+
+/*.skills__divider svg {*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  width: calc(100% + 1.3px);*/
+/*  height: 49px;*/
+/*}*/
+
+/*.skills__divider .shape-fill {*/
+/*  fill: var(--color-primary);*/
+/*}*/
+
+#skills::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 49px;
+  overflow: hidden;
+  line-height: 0;
+  fill: var(--color-primary);
+  background-color: var(--color-primary);
+  mask: var(--divider-curve);
+  -webkit-mask: var(--divider-curve);
+}
 
 
 /* Work */
