@@ -252,6 +252,7 @@ button:focus {
   background-color: var(--color-white);
   mask: var(--divider-single-wave);
   -webkit-mask: var(--divider-single-wave);
+  mask-size: 100% 100%;
 }
 
 /* About */
@@ -405,6 +406,7 @@ button:focus {
   background-color: var(--color-primary);
   mask: var(--divider-curve);
   -webkit-mask: var(--divider-curve);
+  mask-size: 100% 100%;
 }
 
 
@@ -562,11 +564,12 @@ button:focus {
   box-shadow: 5px 5px 0px 0px var(--color-accent);
   transition: opacity 300ms ease-in;
   visibility: hidden;
+  z-index: 10;
 }
 
 /* Footer */
 #contact {
-  /*position: relative;*/
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
 }
@@ -587,19 +590,20 @@ button:focus {
   color: var(--color-accent);
 }
 
-/*#contact::after {*/
-/*  content: '';*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: calc(100% + 1.3px);*/
-/*  height: 49px;*/
-/*  overflow: hidden;*/
-/*  line-height: 0;*/
-/*  background-color: var(--color-white);*/
-/*  mask: var(--divider-arrow);*/
-/*  -webkit-mask: var(--divider-arrow);*/
-/*}*/
+#contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  overflow: hidden;
+  line-height: 0;
+  background-color: var(--color-white);
+  mask: var(--divider-arrow);
+  -webkit-mask: var(--divider-arrow);
+  mask-size: 100% 100%;
+}
 
 /* Responsive Web */
 @media screen and (max-width: 768px) {
